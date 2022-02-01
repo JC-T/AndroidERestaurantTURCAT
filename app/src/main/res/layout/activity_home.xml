@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/appetizers"
+        android:layout_width="131dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="224dp"
+        android:text="Entrées"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/blue_500"/>
+
+    <Button
+        android:id="@+id/main_courses"
+        android:layout_width="131dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Plats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appetizers"
+        android:backgroundTint="@color/blue_500" />
+
+    <Button
+        android:id="@+id/desserts"
+        android:layout_width="131dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:text="Desserts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_courses"
+        android:backgroundTint="@color/blue_500"/>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fresh Food, Fresh Ideas !"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/appetizers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
