@@ -241,4 +241,8 @@
     <color name="rose_700">#be123c</color>
     <color name="rose_800">#9f1239</color>
     <color name="rose_900">#881337</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white_transparent">#4DB8DDB8</color>
+
 </resources>

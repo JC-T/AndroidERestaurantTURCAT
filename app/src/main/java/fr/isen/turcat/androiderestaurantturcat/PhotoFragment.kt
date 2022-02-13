@@ -27,7 +27,8 @@ class PhotoFragment : Fragment() {
     }
 
     companion object{
-        fun newinstance(url: String)=PhotoFragment().apply { arguments=Bundle().apply{putString(URL,url)} }
+        fun newinstance(url: String)=
+            PhotoFragment().apply { arguments=Bundle().apply{putString(URL,url)} }
         const val URL = "URL"
     }
 }

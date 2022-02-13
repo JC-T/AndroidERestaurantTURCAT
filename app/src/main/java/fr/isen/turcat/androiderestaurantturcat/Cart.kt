@@ -9,11 +9,11 @@ import com.google.gson.GsonBuilder
 class Basket(val items: MutableList<BasketItem>): Serializable {
     var itemCount : Int=0
         get() {
-            var count =0
-            items.map {
+
+            return items.map {
                 it.quantity
-            }.reduceOrNull() { acc, i -> acc+i }
-            return count
+            }.reduceOrNull() { acc, i -> acc+i }?:0
+
         }
 
     var totalPrice: Float = 0f
@@ -33,6 +33,7 @@ class Basket(val items: MutableList<BasketItem>): Serializable {
     fun save(context: Context) {
         val jsonFile = File(context.cacheDir.absolutePath + BASKET_FILE)
         jsonFile.writeText(GsonBuilder().create().toJson(this))
+        updatecount(context)
     }
 
     private fun updatecount(context: Context){
@@ -42,9 +43,20 @@ class Basket(val items: MutableList<BasketItem>): Serializable {
         editor.apply()
     }
 
+    fun removeItem(basketItem: BasketItem)
+    {
+        items.remove(basketItem)
+    }
+
     companion object {
-        fun getBasket(): Basket {
-            return Basket(mutableListOf())
+        fun getBasket(context: Context): Basket {
+            val jsonFile = File(context.cacheDir.absolutePath + BASKET_FILE)
+            return if(jsonFile.exists()) {
+                val json = jsonFile.readText()
+                GsonBuilder().create().fromJson(json, Basket::class.java)
+            } else {
+                Basket(mutableListOf())
+            }
         }
         const val BASKET_FILE="basket.json"
         const val ITEMS_COUNT="ITEMS_COUNT"

@@ -9,5 +9,13 @@ class Dish(
     @SerializedName("ingredients") val ingredients: List<Ingredient>,
     @SerializedName("prices") val prices: List<Price>,
 ): Serializable {
+
+    fun getThumbnailURL(): String? {
+        return if (images.isNotEmpty() && images.first().isNotEmpty()) {
+            images.first()
+        } else {
+            null
+        }
+    }
     
 }

@@ -8,47 +8,69 @@
 
     <Button
         android:id="@+id/appetizers"
-        android:layout_width="131dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="224dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/blue_500"
         android:text="Entrées"
+        app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/blue_500"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/main_courses"
-        android:layout_width="131dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/blue_500"
         android:text="Plats"
+        app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appetizers"
-        android:backgroundTint="@color/blue_500" />
+        app:layout_constraintTop_toBottomOf="@+id/appetizers" />
 
     <Button
         android:id="@+id/desserts"
-        android:layout_width="131dp"
-        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/blue_500"
         android:text="Desserts"
+        app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_courses"
-        android:backgroundTint="@color/blue_500"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/main_courses" />
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:text="Fresh Food, Fresh Ideas !"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/appetizers"
+        app:layout_constraintBottom_toTopOf="@id/appetizers"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/basket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:text="Panier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

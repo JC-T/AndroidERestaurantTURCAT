@@ -3,14 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_delete.xml" value="0.14814814814814814" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_no_photography_24.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable/ic_less.xml" value="0.33229166666666665" />
-        <entry key="app/src/main/res/layout/activity_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_basket.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_details.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_meals.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/cell_meal.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.10833333333333334" />
+        <entry key="app/src/main/res/layout/cell_basket.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/cell_meal.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_photo.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="app/src/main/res/layout/menu_basket.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.67" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1875" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1875" />
       </map>
